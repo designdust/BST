@@ -10177,66 +10177,113 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Custom CSS
  * --------------------------------------- */
+.header h1 {
+  font-size: 5em;
+}
+
+/* Custopm CSS for Fullpage JS
+* --------------------------------------- */
+#fp-nav {
+  top: auto;
+  bottom: 40px;
+}
+
 #fp-nav ul li .fp-tooltip {
   color: black;
 }
 
-#menu {
-  position: fixed;
+.fp-controlArrow {
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.fp-controlArrow.fp-prev {
+  left: 40px;
+  width: 0;
+  border-width: 24px 14px 24px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+  right: 40px;
+  border-width: 24px 0 24px 14px;
+  border-color: transparent transparent transparent black;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   top: 0;
-  left: 0;
-  height: 40px;
-  z-index: 70;
+  right: 0;
   width: 100%;
-  padding: 0;
-  margin: 0;
+  height: 100%;
+  background-size: 100% 100%;
+  opacity: 10%;
+  /* in case the video doesn't fit the whole page*/
+  background-image: none;
+  /* our video */
+  background-position: center center;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*cover video background */
+  z-index: 3;
 }
 
-#menu li {
-  display: inline-block;
-  margin: 10px;
-  color: #000;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 2px;
+.overlay {
+  position: relative;
 }
 
-#menu li.active {
-  background: #666;
-  background: rgba(0, 0, 0, 0.5);
+.overlay::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 25%;
+  z-index: 5;
+  background-color: whitesmoke;
+}
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+.bring-to-front {
+  z-index: 1000;
+  position: relative;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
   color: #fff;
 }
 
-#menu li a {
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
+/* Hiding video controls
+* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+* --------------------------------------- */
+video::-webkit-media-controls {
+  display: none !important;
 }
 
-#menu li.active a:hover {
-  color: #000;
-}
-
-#menu li:hover {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-#menu li a {
-  padding: 9px 18px;
-  display: block;
-}
-
-#menu li.active a {
-  padding: 9px 18px;
-  display: block;
-  color: #fff;
-}
-
-.twitter-share-button {
-  position: fixed;
-  z-index: 99;
-  right: 149px;
-  top: 9px;
+/*solves problem with overflowing video in Mac with Chrome */
+#section0 {
+  overflow: hidden;
 }
 
 #download {

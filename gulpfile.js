@@ -140,6 +140,42 @@ gulp.task("replaceHtmlBlock", function () {
     .pipe(gulp.dest("dist/"));
 });
 
+// Compile Only appcss
+gulp.task("compileScss", function compileScss() {
+  return gulp
+    .src([
+      "./assets/scss/app.scss"
+    ])
+    .pipe(
+      sass
+      .sync({
+        outputStyle: "expanded"
+      })
+      .on("error", sass.logError)
+    )
+    .pipe(autoprefixer())
+    .pipe(gulp.dest("./assets/css"));
+});
+
+// Watch Ony App Css
+gulp.task("watchAppCss", function browserDev(done) {
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
+  });
+  gulp.watch(
+    [
+      "assets/scss/*.scss",
+      "assets/scss/**/*.scss"
+    ],
+    gulp.series("compileScss", function cssBrowserReload(done) {
+      browserSync.reload();
+      done(); //Async callback for completion.
+    })
+  );
+});
+
 // Configure the browserSync task and watch file path for change
 gulp.task("watch", function browserDev(done) {
   browserSync.init({
@@ -177,7 +213,7 @@ gulp.task(
     "vendor:build",
     function copyAssets() {
       return gulp
-        .src(["*.html", "favicon.ico", "assets/img/**"], {
+        .src(["*.html", "favicon.ico", "assets/img/**", "assets/video/**"], {
           base: "./"
         })
         .pipe(gulp.dest("dist"));

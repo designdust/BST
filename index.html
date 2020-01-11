@@ -8,7 +8,7 @@
   <meta name="author" content="Ferdinand Tugano" />
   <link rel="icon" href="favicon.ico" />
 
-  <title>Bootstrap Stater</title>
+  <title>BST CONNECT | Blaise Scientific Trading</title>
 
   <!-- Icons for this template -->
   <link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -22,18 +22,31 @@
 </head>
 
 <body>
-  <ul id="menu">
-    <li data-menuanchor="slide-1" class="active"><a href="#slide-1">Title</a></li>
-    <li data-menuanchor="slide-2"><a href="#slide-2">The Host Company</a></li>
-    <li data-menuanchor="slide-3"><a href="#slide-3">General Problem</a></li>
-    <li data-menuanchor="slide-4"><a href="#slide-4">Specific Problems</a></li>
-    <li data-menuanchor="slide-5"><a href="#slide-5">General Objective</a></li>
-    <li data-menuanchor="slide-6"><a href="#slide-6">Specific Objectives</a></li>
-  </ul>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+    <a class="navbar-brand" href="index.html">BST CONNECT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" id="menu">
+        <li data-menuanchor="slide-1" class="active"><a href="#slide-1" class="nav-link">Title</a></li>
+        <li data-menuanchor="slide-2"><a href="#slide-2" class="nav-link">The Host Company</a></li>
+        <li data-menuanchor="slide-3"><a href="#slide-3" class="nav-link">General Problem</a></li>
+        <li data-menuanchor="slide-4"><a href="#slide-4" class="nav-link">Specific Problems</a></li>
+        <li data-menuanchor="slide-5"><a href="#slide-5" class="nav-link">General Objective</a></li>
+        <li data-menuanchor="slide-6"><a href="#slide-6" class="nav-link">Specific Objectives</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <div id="fullpage">
-    <div class="section bg-primary text-white" id="section0">
-      <div class="container">
+
+    <!-- TITLE -->
+    <div class="section overlay bg-white header" id="header">
+      <div class="container bring-to-front">
         <div class="row">
           <div class="col-12 text-center">
 
@@ -44,34 +57,49 @@
           </div>
         </div>
       </div>
+      <video id="myVideo" loop muted data-autoplay>
+        <!-- muted can be set -->
+        <source src="assets/video/corpo.mp4" type="video/mp4">
+      </video>
     </div>
-    <div class="section" id="section1">
-      <div class="slide bg-warning" id="slide1">
+
+    <!-- HISTORY -->
+    <div class="section bg-light" id="section1">
+      <!-- SLIDE 1 -->
+      <div class="slide" id="slide1">
         <div class=" container">
-          <h1>Brief History Of Blaise Scientific Trading </h1>
-          <p>
-            You can even click on the navigation and jump directly to another section.
-          </p>
+          <div class="row">
+            <div class="col-12">
+              <h1>Brief History Of Blaise Scientific Trading </h1>
+              <p>
+                You can even click on the navigation and jump directly to another section.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
+      <!-- SLIDE 2 -->
       <div class="slide" id="slide2">
         <div class="container">
           <div class="row">
-            <p class="lead">
-              <strong>BLAISE-SCIENTIFIC TRADING</strong> is a local company engaged in the distribution of laboratory
-              equipment and
-              supplies primarily for Water and Environmental Analysis. With a team of young, creative, dynamic &
-              dedicated professionals, we are pushing all areas in providing solutions to the needs of our clients to
-              attain their fulfillment. This company believes in serving our customers by providing the accurate
-              response to the requirements of our customers. Hence, we are for any and every obligation to our wide
-              spectrum.
-            </p>
+            <div class="col-12">
+              <p class="lead">
+                <strong>BLAISE-SCIENTIFIC TRADING</strong> is a local company engaged in the distribution of laboratory
+                equipment and
+                supplies primarily for Water and Environmental Analysis. With a team of young, creative, dynamic &
+                dedicated professionals, we are pushing all areas in providing solutions to the needs of our clients to
+                attain their fulfillment. This company believes in serving our customers by providing the accurate
+                response to the requirements of our customers. Hence, we are for any and every obligation to our wide
+                spectrum.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
+
+    <!-- GENERAL PROBLEM -->
     <div class="section" id="">
       <div class=" container">
         <h1>General Problem</h1>
@@ -79,38 +107,109 @@
           help to retain existing clients, gain new ones and improve customer service experience.</p>
       </div>
     </div>
+
+    <!-- SPECIFIC PROBLEM -->
     <div class="section" id="">
-      <div class=" container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>Specific Problems</h1>
-          </div>
-          <div class="col-md-6">
+      <!-- SLIDE 1 -->
+      <div class="slide" id="slide1">
+        <div class=" container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>Specific Problems</h1>
+            </div>
+            <div class="col-md-6 mt-4">
 
-            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
-              for Blaise-Scientific Trading that
-              will
-              help to retain existing clients, gain new ones and improve customer service experience.</p>
+              <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management
+                System
+                for Blaise-Scientific Trading that
+                will
+                help to retain existing clients, gain new ones and improve customer service experience.</p>
 
-            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
-              for Blaise-Scientific Trading that
-              will
-              help to retain existing clients, gain new ones and improve customer service experience.</p>
+              <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management
+                System
+                for Blaise-Scientific Trading that
+                will
+                help to retain existing clients, gain new ones and improve customer service experience.</p>
 
-            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
-              for Blaise-Scientific Trading that
-              will
-              help to retain existing clients, gain new ones and improve customer service experience.</p>
+              <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management
+                System
+                for Blaise-Scientific Trading that
+                will
+                help to retain existing clients, gain new ones and improve customer service experience.</p>
 
-            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
-              for Blaise-Scientific Trading that
-              will
-              help to retain existing clients, gain new ones and improve customer service experience.</p>
-
+            </div>
           </div>
         </div>
       </div>
+      <!-- SLIDE 2 -->
+      <div class="slide" id="slide2">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-6 mt-4">
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Nostrum blanditiis dolores temporibus vel odit, iste itaque minus dignissimos in labore.</p>
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Officia dolor excepturi eum?</p>
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Nesciunt cumque ex dolor, cupiditate est expedita?</p>
+
+            </div>
+
+            <div class="col-md-6 mt-4">
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Nostrum blanditiis dolores temporibus vel odit, iste itaque minus dignissimos in labore.</p>
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Officia dolor excepturi eum?</p>
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Nesciunt cumque ex dolor, cupiditate est expedita?</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SLIDE 2 -->
+      <div class="slide" id="slide2">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-6 mt-4">
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Nostrum blanditiis dolores temporibus vel odit, iste itaque minus dignissimos in labore.</p>
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Officia dolor excepturi eum?</p>
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Nesciunt cumque ex dolor, cupiditate est expedita?</p>
+
+            </div>
+
+            <div class="col-md-6 mt-4">
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Nostrum blanditiis dolores temporibus vel odit, iste itaque minus dignissimos in labore.</p>
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Quo, voluptatem.</p>
+
+              <p class="lead"> <i class="fas fa-dot-circle"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Nesciunt cumque ex dolor, cupiditate est expedita?</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
     <div class="section">
       <div class=" container">
         <h1>General Objectives</h1>
@@ -169,9 +268,25 @@
       anchors: ['slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5', 'slide-6'],
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Title', 'The Host Company', 'General Problem', 'Specific Problem', 'Specific Objective', 'Specific Objectives'],
+      navigationTooltips: ['Title', 'The Host Company', 'General Problem', 'Specific Problem', 'Specific Objective',
+        'Specific Objectives'
+      ],
       showActiveTooltip: true,
+      slidesNavigation: true,
+      controlArrows: false,
     });
+  </script>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementsByClassName("navbar").style.top = "0";
+      } else {
+        document.getElementsByClassName("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
   </script>
 </body>
 

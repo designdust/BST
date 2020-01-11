@@ -3,68 +3,118 @@
 /* Custom CSS
  * --------------------------------------- */
 
+.header {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+/* Custopm CSS for Fullpage JS
+* --------------------------------------- */
 #fp-nav {
+  top: auto;
+  bottom: 40px;
+
   ul li .fp-tooltip {
     color: black;
   }
 }
 
-#menu {
-  li {
-    display: inline-block;
-    margin: 10px;
-    color: #000;
-    background: #fff;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 2px;
+// Video Section Custom Style
 
-    &.active {
-      background: #666;
-      background: rgba(0, 0, 0, 0.5);
-      color: #fff;
-    }
+.fp-controlArrow {
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 
-    a {
-      font-weight: bold;
-      text-decoration: none;
-      color: #000;
-    }
-
-    &.active a:hover {
-      color: #000;
-    }
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.8);
-    }
-
-    a {
-      padding: 9px 18px;
-      display: block;
-    }
-
-    &.active a {
-      padding: 9px 18px;
-      display: block;
-      color: #fff;
-    }
+  &.fp-prev {
+    left: 40px;
+    width: 0;
+    border-width: 24px 14px 24px 0;
+    border-color: transparent black transparent transparent;
   }
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 40px;
-  z-index: 70;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  &.fp-next {
+    right: 40px;
+    border-width: 24px 0 24px 14px;
+    border-color: transparent transparent transparent black;
+  }
 }
 
-.twitter-share-button {
-  position: fixed;
-  z-index: 99;
-  right: 149px;
-  top: 9px;
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  opacity: 10%;
+  /* in case the video doesn't fit the whole page*/
+  background-image: none;
+  /* our video */
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3;
+}
+
+.overlay {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 25%;
+    z-index: 5;
+
+    background-color: whitesmoke;
+  }
+}
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+.bring-to-front {
+  z-index: 1000;
+  position: relative;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+}
+
+/* Hiding video controls
+* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+* --------------------------------------- */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0 {
+  overflow: hidden;
 }
 
 #download {

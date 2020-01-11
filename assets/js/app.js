@@ -5,7 +5,9 @@ var app = {
   init: function () {
     app.functionOne();
   },
-  functionOne: function () {}
+  functionOne: function () {
+
+  }
 };
 $("document").ready(function () {
   app.init();
