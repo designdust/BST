@@ -1,94 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="Ferdinand Tugano" />
-    <link rel="icon" href="favicon.ico" />
 
-    <title>Bootstrap Stater</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="Ferdinand Tugano" />
+  <link rel="icon" href="favicon.ico" />
 
-    <!-- Icons for this template -->
-    <link
-      href="assets/fonts/font-awesome/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Stylesheet -->
-    <!-- build:css -->
-    <link href="assets/css/app.css" rel="stylesheet" />
-    <!-- endbuild -->
-  </head>
+  <title>Bootstrap Stater</title>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
-            <i class="fas fa-search" aria-hidden="true"></i> Search
-          </button>
-        </form>
+  <!-- Icons for this template -->
+  <link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
+  <!-- Stylesheet -->
+  <!-- build:vendor -->
+  <link href="assets/css/fullpage.css" rel="stylesheet" />
+  <!-- endbuild -->
+  <!-- build:scss -->
+  <link href="assets/css/app.css" rel="stylesheet" />
+  <!-- endbuild -->
+</head>
+
+<body>
+  <ul id="menu">
+    <li data-menuanchor="slide-1" class="active"><a href="#slide-1">Title</a></li>
+    <li data-menuanchor="slide-2"><a href="#slide-2">The Host Company</a></li>
+    <li data-menuanchor="slide-3"><a href="#slide-3">General Problem</a></li>
+    <li data-menuanchor="slide-4"><a href="#slide-4">Specific Problems</a></li>
+    <li data-menuanchor="slide-5"><a href="#slide-5">General Objective</a></li>
+    <li data-menuanchor="slide-6"><a href="#slide-6">Specific Objectives</a></li>
+  </ul>
+
+  <div id="fullpage">
+    <div class="section bg-primary text-white" id="section0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <h1 class=" font-weight-bold">BST CONNECT</h1>
+            <h4>A Customer Relationship Management System <br>
+              for <br>
+              Blaise Scientific Trading</h4>
+          </div>
+        </div>
       </div>
-    </nav>
-
-    <main role="main" class="container">
-      <div class="jumbotron text-center">
-        <img src="assets/img/logo.png" />
-        <h1>Bootstrap 4 Starter Template</h1>
-        <p class="lead">This example is a quick bootstrap starter template.</p>
-        <a
-          class="btn btn-lg btn-primary"
-          href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"
-          role="button"
-          target="_blank"
-          >View Bootstrap 4 Docs &raquo;</a
-        >
+    </div>
+    <div class="section" id="section1">
+      <div class="slide bg-warning" id="slide1">
+        <div class=" container">
+          <h1>Brief History Of Blaise Scientific Trading </h1>
+          <p>
+            You can even click on the navigation and jump directly to another section.
+          </p>
+        </div>
       </div>
-    </main>
 
-    <!-- Bootstrap core JavaScript
+      <div class="slide" id="slide2">
+        <div class="container">
+          <div class="row">
+            <p class="lead">
+              <strong>BLAISE-SCIENTIFIC TRADING</strong> is a local company engaged in the distribution of laboratory
+              equipment and
+              supplies primarily for Water and Environmental Analysis. With a team of young, creative, dynamic &
+              dedicated professionals, we are pushing all areas in providing solutions to the needs of our clients to
+              attain their fulfillment. This company believes in serving our customers by providing the accurate
+              response to the requirements of our customers. Hence, we are for any and every obligation to our wide
+              spectrum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section" id="">
+      <div class=" container">
+        <h1>General Problem</h1>
+        <p class="lead">How to develop a Customer Relationship Management System for Blaise-Scientific Trading that will
+          help to retain existing clients, gain new ones and improve customer service experience.</p>
+      </div>
+    </div>
+    <div class="section" id="">
+      <div class=" container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Specific Problems</h1>
+          </div>
+          <div class="col-md-6">
+
+            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
+              for Blaise-Scientific Trading that
+              will
+              help to retain existing clients, gain new ones and improve customer service experience.</p>
+
+            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
+              for Blaise-Scientific Trading that
+              will
+              help to retain existing clients, gain new ones and improve customer service experience.</p>
+
+            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
+              for Blaise-Scientific Trading that
+              will
+              help to retain existing clients, gain new ones and improve customer service experience.</p>
+
+            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
+              for Blaise-Scientific Trading that
+              will
+              help to retain existing clients, gain new ones and improve customer service experience.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class=" container">
+        <h1>General Objectives</h1>
+        <p class="lead">How to develop a Customer Relationship Management System for Blaise-Scientific Trading that will
+          help to retain existing clients, gain new ones and improve customer service experience.</p>
+      </div>
+    </div>
+
+    <div class="section" id="">
+      <div class=" container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Specific Objectives</h1>
+          </div>
+          <div class="col-md-6">
+
+            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
+              for Blaise-Scientific Trading that
+              will
+              help to retain existing clients, gain new ones and improve customer service experience.</p>
+
+            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
+              for Blaise-Scientific Trading that
+              will
+              help to retain existing clients, gain new ones and improve customer service experience.</p>
+
+            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
+              for Blaise-Scientific Trading that
+              will
+              help to retain existing clients, gain new ones and improve customer service experience.</p>
+
+            <p class="lead"> <i class="fas fa-dot-circle"></i> How to develop a Customer Relationship Management System
+              for Blaise-Scientific Trading that
+              will
+              help to retain existing clients, gain new ones and improve customer service experience.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript
 ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/vendor/jquery.slim.min.js"></script>
-    <script src="assets/js/vendor/popper.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <!-- build:js -->
-    <script src="assets/js/app.js"></script>
-    <!-- endbuild -->
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/vendor/jquery.slim.min.js"></script>
+  <script src="assets/js/vendor/popper.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/fullpage.js"></script>
+  <!-- build:js -->
+  <script src="assets/js/app.js"></script>
+  <!-- endbuild -->
+
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      menu: '#menu',
+      anchors: ['slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5', 'slide-6'],
+      navigation: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['Title', 'The Host Company', 'General Problem', 'Specific Problem', 'Specific Objective', 'Specific Objectives'],
+      showActiveTooltip: true,
+    });
+  </script>
+</body>
+
 </html>
