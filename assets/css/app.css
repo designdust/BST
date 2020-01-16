@@ -10177,8 +10177,30 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Custom CSS
  * --------------------------------------- */
-.header h1 {
+.sec-header h1 {
   font-size: 5em;
+}
+
+@media (max-width: 767.98px) {
+  .sec-header h1 {
+    font-size: 3em;
+  }
+  .sec-header h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lead {
+    font-size: 1rem;
+  }
+  .lead .fas {
+    font-size: .5rem;
+  }
+}
+
+.fp-scrollable {
+  max-height: 70vh;
 }
 
 /* Custopm CSS for Fullpage JS

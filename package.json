@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/designdust/bootstrap-4-gulp-4-sass-boilerplate.git"
+    "url": "git+https://github.com/designdust/BST.git"
   },
   "keywords": [
     "Sass",
@@ -43,7 +43,7 @@
     "4"
   ],
   "bugs": {
-    "url": "https://github.com/designdust/bootstrap-4-gulp-4-sass-boilerplate/issues"
+    "url": "https://github.com/designdust/BST/issues"
   },
-  "homepage": "https://github.com/designdust/bootstrap-4-gulp-4-sass-boilerplate#readme"
+  "homepage": "https://github.com/designdust/BST#readme"
 }

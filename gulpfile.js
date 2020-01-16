@@ -26,6 +26,7 @@ gulp.task("vendor:js", function () {
       "./node_modules/popper.js/dist/umd/popper.*",
       "./node_modules/fullpage.js/vendors/easings.min.js",
       "./node_modules/fullpage.js/dist/fullpage.js",
+      "./node_modules/fullpage.js/vendors/scrolloverflow.js",
     ])
     .pipe(gulp.dest("./assets/js/vendor"));
 });

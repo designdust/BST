@@ -3,10 +3,34 @@
 /* Custom CSS
  * --------------------------------------- */
 
-.header {
+.sec-header {
   h1 {
     font-size: 5em;
   }
+
+  @include media-breakpoint-down(sm) {
+    h1 {
+      font-size: 3em;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .lead {
+    font-size: 1rem;
+
+    .fas {
+      font-size: .5rem;
+    }
+  }
+}
+
+.fp-scrollable {
+  max-height: 70vh;
 }
 
 /* Custopm CSS for Fullpage JS
